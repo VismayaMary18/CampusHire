@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Hire</title>
+  <link rel="stylesheet" href="/static/css/stylestudent.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Hire</h1>
+    <nav>
+      <ul>
+        <li><a href="\addstudetails\">Add Student Details</a></li>
+        <li><a href="\editprofile\">Edit Profile</a></li>
+        <li><a href="\logout\">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="top-section">
+    <div class="background-image"></div>
+    <div class="section-content">
+      <h1>Welcome, {{ username }}</h1>
+      <p>Your pathway to success in the job market</p>
+    </div>
+  </section>
+  
+  
+
+
+  <section id="options-section">
+    <a href="\placement\" class="option">
+      <div class="image-container">
+        <img src="\static\images\jobs.png" alt="Job Placements">
+      </div>
+      <h2>Job Placements</h2>
+    </a>
+    <a href="\resume\" class="option">
+      <div class="image-container">
+        <img src="\static\images\resumemaker.png" alt="Resume Maker">
+      </div>
+      <h2>Resume Maker</h2>
+    </a>
+    <a href="\resources\" class="option">
+      <div class="image-container">
+        <img src="\static\images\aptitudetraining.png" alt="Aptitude Trainer">
+      </div>
+      <h2>Aptitude Trainer</h2>
+    </a>
+  </section>
+  
+
+

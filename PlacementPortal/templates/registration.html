@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campus Hire - Registration</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/styleregistration.css">
+</head>
+<body>
+  <section id="registration-section">
+    <div class="background-image"></div>
+    <div class="section-content">
+      <h1>SIGN UP</h1>
+      <form method="post" action="/register/">
+        {% csrf_token %}
+        <input type="text" placeholder="Full Name" name="username">
+        <input type="email" placeholder="Email" name="email">
+        <input type="password" placeholder="Password" name="password1">
+        <input type="password" placeholder="Password" name="password2">    
+        <button class="register-btn">Register</button>
+        <p class="login-link">Already have an account? <a href="\login\">Login</a></p>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

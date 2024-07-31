@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Openings</title>
+  <link rel="stylesheet" href="/static/css/styleplacement.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Campus Hire</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="studentview.html">Home</a></li>
+          <li><a href="/logout/">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="job-openings-section">
+    <h2>Job Openings</h2>
+    <div class="job-tiles">
+      <!--<a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 1</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 1</p>
+          <p class="job-requirements">Job Requirements 1</p>
+        </div>
+      </a>
+    -->
+      {% for job in job_titles %}
+      <a href="\job-listings\" class="job-tile">
+        <h3 class="job-name">{{ job.company }}</h3>
+        <div class="job-details">
+          <p class="job-description">{{ job.title }}</p>
+          <p class="job-description">{{ job.requirements }}</p>
+        </div>
+      </a>
+      {% endfor %}
+
+      {% comment %} <!-- Add more job tiles as needed -->
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a>
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a>
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a>
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a>
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a>
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a>
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a>
+      <a href="jobtile.html" class="job-tile">
+        <h3 class="job-name">Job Title 2</h3>
+        <div class="job-details">
+          <p class="job-description">Job Description 2</p>
+          <p class="job-requirements">Job Requirements 2</p>
+        </div>
+      </a> {% endcomment %}
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

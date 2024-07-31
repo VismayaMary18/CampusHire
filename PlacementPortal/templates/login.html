@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campus Hire - Login</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/stylelogin.css">
+</head>
+<body>
+  <section id="login-section">
+    <div class="background-image"></div>
+    <div class="section-content">
+      <h1>Login</h1>
+      <form method="post" action="/login/">
+        {% csrf_token %}
+        <input type="text" placeholder="Username" id="username" name="username">
+        <input type="password" placeholder="Password" id="password" name="passw">
+        <button class="login-btn">Login</button>
+        <p class="signup-link">Don't have an account? <a href="\register\">Sign up</a></p>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* aptitude.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 20, 0, 0.8);
+    padding: 20px;
+  }
+  
+  .navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .test-section {
+    margin-top: 130px;
+    padding: 20px;
+    color: #0f073c;
+  }
+  
+  .difficulty-levels {
+    margin-bottom: 20px;
+  }
+  
+  .difficulty-levels h3 {
+    margin: 0;
+  }
+  
+  .difficulty-buttons {
+    margin-top: 10px;
+  }
+  
+  .difficulty-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .difficulty-button:hover {
+    background-color: #d9d9d9;
+  }
+  
+  .question-set {
+    margin-bottom: 20px;
+  }
+  
+  .submit-section {
+    text-align: center;
+  }
+  
+  .submit-button {
+    background-color: rgba(0, 20, 0, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #003300;
+  }
+  
+  .score-section {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

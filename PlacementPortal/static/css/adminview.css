@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main Styles */
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  /* Login Page Styles */
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .login-container h2 {
+    margin-top: 0;
+  }
+  
+  .login-container form {
+    margin-top: 20px;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .login-container button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Admin Dashboard Styles */
+  .admin-dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .admin-dashboard-container h2 {
+    margin-top: 0;
+  }
+  
+  /* Add Placement Styles */
+  .add-placement-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .add-placement-container h2 {
+    margin-top: 0;
+  }
+  
+  /* View Users Styles */
+  .view-users-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .view-users-container h2 {
+    margin-top: 0;
+  }
+  
+  /* Add Questions Styles */
+  .add-questions-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .add-questions-container h2 {
+    margin-top: 0;
+  }
+  

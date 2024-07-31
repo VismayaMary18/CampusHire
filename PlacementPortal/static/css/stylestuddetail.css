@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(160, 160, 224, 0.8), rgba(0, 0, 50, 0.8)), url(/static/images/waves.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(15, 38, 130, 0.679);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+  }
+  
+  .logo h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #add-details-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+  }
+  
+  .glass-section {
+    background-color: rgba(0, 20, 0, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px; /* Set the maximum width */
+    height: 525px;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the section horizontally */
+  }
+  
+  .glass-section h2 {
+    color: #0f53c9;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .glass-section form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .glass-section label {
+    color: #092e7d;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: right;
+  }
+  
+  .glass-section input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .glass-section .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .glass-section .submit-btn button {
+    width: 318px;
+    height: 35px;
+    margin-left: 160px;
+    
+  }
+  

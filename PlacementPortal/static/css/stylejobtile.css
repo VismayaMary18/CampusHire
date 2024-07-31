@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(103, 103, 235, 0.8), rgba(105, 105, 218, 0.8)), url(/static/images/1012.jpg);
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+ /* ...previous CSS code... */
+
+ .navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(12, 10, 75, 0.8);
+    padding: 20px;
+  }
+  
+  .navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  
+  
+  .logo h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  
+  
+  .job-tile-section {
+   
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 50px;
+    margin-top: 180px;
+  }
+  
+  .job-title {
+    font-size: 28px;
+    margin: 0 0 10px;
+  }
+  
+  .company-details {
+    margin-bottom: 20px;
+  }
+  
+  .company-name {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .company-address {
+    margin: 0;
+    color: #555;
+  }
+  
+  .company-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .job-description,
+  .eligibility,
+  .salary-package {
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .description-text,
+  .eligibility-list,
+  .salary-text {
+    color: #333;
+  }
+  
+  .eligibility-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .apply-button {
+    text-align: center;
+  }
+  
+  .apply-now-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #7064dcc9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-now-button:hover {
+    background-color: #45a049;
+  }
+  

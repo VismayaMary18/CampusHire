@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#registration-section {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#registration-section .background-image {
+  flex: 2;
+  background-image: url(/static/images/signupbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.section-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #010101;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #333333;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(85, 59, 198, 0.1);
+}
+
+button.register-btn {
+  width: 325px;
+  padding:12px;
+  background-color: #23349e;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button.register-btn:hover {
+  background-color: #0056b3;
+}
+
+p.login-link {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+p.login-link a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+p.login-link a:hover {
+  text-decoration: underline;
+}

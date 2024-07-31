@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Details</title>
+  <link rel="stylesheet" href="/static/css/stylejobtile.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Campus Hire</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="studentview.html">Home</a></li>
+          <li><a href="/logout/">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  {% for job in job_openings %}
+
+  <section class="job-tile-section">
+    <div class="job-tile">
+      <h2 class="job-title">{{ job.title }}</h2>
+      <div class="company-details">
+        <h3 class="company-name">{{ job.company }}</h3>
+        <p class="company-address">{{ job.job_location }}</p>
+        <div class="company-links">
+          <a href="{{ job.website }}">Website </a>
+          <a href="{{ job.linkedin }}">LinkedIn</a>
+        </div>
+      </div>
+      <div class="job-description">
+        <h3 class="section-heading">Job Description</h3>
+        <p class="description-text">
+          {{ job.description }}
+        </p>
+      </div>
+      <div class="eligibility">
+        <h3 class="section-heading">Eligibility</h3>
+        <ul class="eligibility-list">
+          <li>Minimum 2 years of experience</li>
+          <li>Bachelor's degree in Computer Science</li>
+          <li>Excellent problem-solving skills</li>
+        </ul>
+      </div>
+      <div class="salary-package">
+        <h3 class="section-heading">Salary Package</h3>
+        <p class="salary-text">Competitive salary based on experience and qualifications.</p>
+      </div>
+      <div class="apply-button">
+        <a href="#" class="apply-now-button" onclick="applyNow()">Apply Now</a>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+
+  <script>
+    function applyNow() {
+      var applyButton = document.querySelector('.apply-now-button');
+      applyButton.innerHTML = 'Applied';
+      applyButton.classList.add('applied');
+      applyButton.disabled = true;
+    }
+  </script>
+</body>
+</html>

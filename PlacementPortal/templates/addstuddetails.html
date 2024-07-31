@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Hire</title>
+  <link rel="stylesheet" href="/static/css/stylestuddetail.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Campus Hire</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="studentview.html">Home</a></li>
+        <li><a href="\logout\">Logout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="add-details-section">
+    <div class="glass-section">
+      <h2>Add Student Details</h2>
+      <form method="post" action="/addstudetails/">
+        {% csrf_token %}
+        <label for="name">Full Name:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college">
+
+        <label for="cgpa">CGPA:</label>
+        <input type="text" id="cgpa" name="cgpa">
+
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills">
+
+        <label for="projects">Projects Worked On:</label>
+        <input type="text" id="projects" name="projects">
+
+        <label for="internships">Other Internships:</label>
+        <input type="text" id="internships" name="internships">
+
+        <label for="Other achievements">Achievements:</label>
+        <input type="text" id="achievements" name="achievements">
+
+        <label for="about">About Me:</label>
+        <textarea id="about" name="about" rows="4" cols="41"> </textarea>
+
+        <div class="submit-btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
